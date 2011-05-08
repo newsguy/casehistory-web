@@ -1,0 +1,3 @@
+This serves as a frontend for the CaseHistory application. This one is implemented using Apache Wicket framework. We could switch over to Ruby on Rails or other web frameworks later as deemed necessary.
+
+This is also a maven project. To build and run this: mvn jetty:run

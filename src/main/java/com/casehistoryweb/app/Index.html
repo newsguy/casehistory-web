@@ -1,0 +1,57 @@
+<html>
+<head>
+<title>CaseHistory - Read news the better way!</title>
+<link href="style.css" rel="stylesheet" />
+</head> 
+<body>
+<div id="container">
+
+<div id="header"><h1>CaseHistory</h1></div>
+
+<!-- contents starts -->
+<div id="contents">
+
+<!-- main begins -->
+<div id="main">
+<div wicket:id="newsitems" class="newsItem">
+<h3 wicket:id="title">Gouda</h3>
+<p wicket:id="content">Gouda is a Dutch...</p>
+<p>
+<a wicket:id="add" href="#">add to cart</a>
+</p>
+</div>
+<wicket:remove>
+<div class="newsitem"> <h3>Emmental</h3> <p>Emmental is a Swiss che...</p> <p>
+<a href="#">add to cart</a> </p>
+</div>
+</wicket:remove>
+</div>
+<!-- main ends -->
+
+<!-- cart begins -->
+<div id="relevantNewsItems">
+<h3>Your selection</h3>
+<table>
+<tbody>
+<tr wicket:id="relevantNewsItems">
+	<td wicket:id="title">Gouda</td>
+	<td><a wicket:id="remove" href="#">remove</a></td>
+</tr>
+<wicket:remove>
+<tr>
+<td>Emmental</td>
+<td><a href="#">remove</a></td>
+</tr>
+</wicket:remove>
+</tbody>
+</table>
+<input type="button" value="Check out" />
+</div>
+<!-- cart ends -->
+
+</div>
+<!-- contents ends -->
+
+</div>
+</body>
+</html>
